@@ -29,6 +29,13 @@ set backspace=indent,eol,start
 set laststatus=2
 set relativenumber
 set undofile
+set history=1000
+set undodir=~/.tmp/undodir
+set backupdir=~/.tmp
+set directory=~/.tmp
+set ffs=unix,mac,dos
+set spell
+
 
 "change the leader key
 let mapleader=","
@@ -90,7 +97,17 @@ nnoremap <C-l> <C-w>l
 nnoremap <silent> <F3> :YRShow<cr>
 inoremap <silent> <F3> <ESC>:YRShow<cr>
 
-"solarized 配色设置
-syntax enable
-set background=dark
-colorscheme solarized
+set shell=/bin/zsh
+
+syntax on
+if has("gui_running")
+    set guioptions=egmrt
+    set guioptions-=T
+    set t_Co=256
+    set background=dark
+    colorscheme solarized
+    set showtabline=2
+else
+    colorscheme solarized
+    set background=dark
+endif
