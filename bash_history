@@ -1,159 +1,3 @@
-traceroute www.baidu.com
-#1321067164
-ssh root@192.168.1.1
-#1321067414
-ssh root@192.168.1.1
-#1321067945
-ping v9.blockcn.net
-#1321068128
-ssh zhen9ao@zhen9ao.me
-#1321067824
-ssh root@192.168.1.1
-#1321067825
-ssh root@192.168.1.1
-#1321067826
-ssh root@192.168.1.1
-#1321067827
-ssh root@192.168.1.1
-#1321067827
-ssh root@192.168.1.1
-#1321067828
-ssh root@192.168.1.1
-#1321067832
-ping 192.168.1.1
-#1321067863
-ssh root@192.168.1.1
-#1321077460
-ping v9.blockcn.net
-#1321084056
-ping v9.blockcn.net
-#1321084110
-ssh zhen9ao@zhen9ao.me
-#1321085055
-ssh zhen9ao@zhen9ao.me
-#1321085065
-ssh zhen9ao@zhen9ao.me
-#1321085260
-ssh zhen9ao@zhen9ao.me
-#1321085286
-ssh zhen9ao@zhen9ao.me
-#1321085338
-ssh zhen9ao@zhen9ao.me
-#1321085860
-ssh root@192.168.1.1
-#1321086931
-ssh zhen9ao@zhen9ao.me
-#1321104594
-clear
-#1321104596
-ssh zhen9ao@zhen9ao.me
-#1321104659
-traceroute 8.8.8.
-#1321104662
-traceroute 8.8.8.8
-#1321104670
-traceroute baidu.com
-#1321112202
-ssh zhen9ao@zhen9ao.me
-#1321112410
-cd Documents/workspace/twitter4j/
-#1321112414
-vim .git/config 
-#1321112466
-vim .git/config 
-#1321112603
-cd ../..
-#1321112605
-cd XcodeProject/
-#1321112606
-ls
-#1321112608
-cd iOrangeBook/
-#1321112609
-ls
-#1321112614
-git fetch origin
-#1321112623
-git status
-#1321117283
-cd ..
-#1321117284
-cd ..
-#1321117285
-ls
-#1321117288
-cd Github/
-#1321117288
-ls
-#1321117293
-git clone https://github.com/devinross/tapkulibrary.git
-#1321117843
-git clone https://github.com/facebook/three20.git
-#1321120343
-cd /Volumes/G/
-#1321120344
-ls
-#1321120347
-cd video/
-#1321120347
-ls
-#1321120351
-cd .good/
-#1321120351
-ls
-#1321120353
-cd 18\ 19/
-#1321120354
-ls
-#1321120356
-cd 第18部/
-#1321120357
-ls
-#1321120365
-open -a mplayerx 1_H264高清_640x360.AVI 
-#1321153509
-whois
-#1321153515
-whois zhen9ao.me
-#1321153529
-whois baidu.com
-#1321154183
-whois zhen9ao.me
-#1321154263
-whois zhen9ao.me
-#1321163843
-cd Documents/XcodeProject/iOrangeBook/
-#1321163847
-git status
-#1321163866
-git branch
-#1321164121
-git status
-#1321164134
-git add iOrange.xcodeproj/*
-#1321164136
-git status
-#1321164149
-git commit -m "edit xcodeproj file"
-#1321164158
-git push remote master
-#1321164164
-git push origin master
-#1321164932
-git status
-#1321155569
-ssh zhen9ao@zhen9ao.me
-#1321188654
-ssh zhen9ao@zhen9ao.me
-#1321188750
-ssh zhen9ao@zhen9ao.me
-#1321192495
-sudo vim /etc/hosts
-#1321202664
-clear; cd '/Users/zheng/Desktop/test'
-#1321202667
-git status
-#1321202679
 ls
 #1321202681
 ls -la
@@ -992,3 +836,150 @@ vim .vimrc
 vim .vimrc
 cd Documents/github/octopress
 vim config.rb
+#1321973563
+cd /Users/zheng/Documents/github
+#1321973594
+cd /Users/zheng/Documents/github
+#1321974555
+android
+#1321974588
+android
+#1321973586
+cd /Users/zheng/Documents/github
+#1321973601
+ls
+#1321973608
+git clone git://github.com/kaeppler/droid-fu.git
+#1321973623
+ls
+#1321973633
+cd droid-fu/
+#1321973634
+ls
+#1321973825
+mvn --version
+#1322034950
+android
+#1322034961
+ddms
+#1322036369
+vim .vimrc
+exit
+#1322038011
+cd /Users/zheng/Documents/github/roboguice/astroboy
+#1322038012
+ls
+#1322038021
+mvn clean install android:deploy android:run
+#1322038193
+mvn clean install android:deploy android:run
+#1322038279
+mvn clean install android:deploy android:run
+#1322039364
+mvn clean install android:deploy android:run
+#1322039527
+mvn clean install android:deploy android:run
+#1322041033
+ls
+#1322041035
+ls -l
+#1322041048
+c
+#1322041049
+cd
+#1322041051
+ls -la
+#1322055472
+sudo brew update
+#1322055507
+sudo brew list
+#1322055582
+sudo brew install macvim
+#1322055810
+mvim
+#1322055833
+sudo brew install git
+#1322055845
+brew upgrade git
+#1322055849
+sudo brew upgrade git
+#1322055965
+cd `brew --prefix`/Library/Contributions/examples
+#1322055973
+git clean -n
+#1322055981
+cd
+#1322055984
+sudo brew upgrade git
+#1322056006
+cd `brew --prefix`/Library/Contributions/examples
+#1322056012
+git clean -f
+#1322056020
+ls
+#1322056026
+cd
+#1322056040
+brew --prefix
+#1322056047
+brew
+#1322056072
+brew upgrade git
+#1322056188
+git
+#1322056191
+git 
+#1322056197
+git --versio
+#1322056199
+git --version
+#1322056222
+brew upgrade ack
+#1322056238
+brew upgrade
+#1322056305
+brew
+#1322056310
+brew uninstall ruby
+#1322056315
+sudo brew uninstall ruby
+#1322056339
+brew install ruby
+#1322056774
+brew uninstall readline
+#1322056782
+sudo brew uninstall readline
+#1322056800
+sudo brew uninstall ack
+#1322056806
+brew install ack
+#1322056836
+sudo brew uninstall emacs
+#1322056855
+sudo brew uninstal gdbm
+#1322056861
+sudo brew uninstall gdbm
+#1322056875
+sudo brew uninstall macvim
+#1322056882
+brew install macvim
+#1322056922
+sudo brew uninstall zsh
+#1322056939
+brew install zsh
+#1322057078
+zsh
+set -e
+cd `brew --prefix`
+/usr/bin/ruby -e "$(curl -fsSL https://raw.github.com/gist/323731)"
+which gem
+ls /usr/bin | grep gem
+ls -l /usr/bin | grep gem
+zsh
+#1322100501
+cd /Users/zheng/Documents/github/roboguice/astroboy
+#1322100514
+cd /Users/zheng/Documents/github/roboguice/astroboy
+#1322100567
+bash
+zsh

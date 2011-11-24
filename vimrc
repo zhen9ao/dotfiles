@@ -6,10 +6,14 @@ set nocompatible
 set modelines=0
 
 "tab settings
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
-set expandtab
+set ts=4 sts=4 sw=4 expandtab
+
+" Mappings for a recovering TextMate user {{{1
+" Indentation {{{2
+nmap <D-[> <<
+nmap <D-]> >>
+vmap <D-[> <gv
+vmap <D-]> >gv
 
 "few options make thins better
 "set encoding=utf-8
@@ -87,11 +91,32 @@ au Focuslost * :wa
 "map jj to <ESC>
 inoremap qq <ESC>
 
-"map keys for windows movements
+"Speed up buffer switching
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+"Speed up tab switching
+map <D-S-]> gt
+map <D-S-[> gT
+map <D-1> 1gt
+map <D-2> 2gt
+map <D-3> 3gt
+map <D-4> 4gt
+map <D-5> 5gt
+map <D-6> 6gt
+map <D-7> 7gt
+map <D-8> 8gt
+map <D-9> 9gt
+map <D-0> :tablast<CR>
+
+" Shortcuts for opening file in same directory as current file {{{2
+cnoremap %% <C-R>=expand('%:h').'/'<cr>
+map <leader>ew :e %%
+map <leader>es :sp %%
+map <leader>ev :vsp %%
+map <leader>et :tabe %%
+map <leader>er :e <C-R>=expand("%:r")."."<CR>
 
 "for yanking...
 nnoremap <silent> <F3> :YRShow<cr>
@@ -100,6 +125,7 @@ inoremap <silent> <F3> <ESC>:YRShow<cr>
 set shell=/bin/zsh
 
 syntax on
+
 if has("gui_running")
     set guioptions=egmrt
     set guioptions-=T
@@ -108,6 +134,6 @@ if has("gui_running")
     colorscheme solarized
     set showtabline=2
 else
-    colorscheme solarized
     set background=dark
+    colorscheme solarized
 endif
