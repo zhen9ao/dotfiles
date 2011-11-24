@@ -124,6 +124,11 @@ inoremap <silent> <F3> <ESC>:YRShow<cr>
 
 set shell=/bin/zsh
 
+" Commenting {{{2
+" requires NERDCommenter plugin
+vmap <D-/> \\gv
+map <D-/> \\\
+
 syntax on
 
 if has("gui_running")

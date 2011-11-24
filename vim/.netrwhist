@@ -1,5 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/Users/zheng/Documents/XcodeProject/iOrangeBook/.git'
 let g:netrw_dirhist_2='/Users/zheng/Downloads/jayway-maven-android-plugin-samples-c664bcf/scala'
 let g:netrw_dirhist_3='/Users/zheng/Downloads/jayway-maven-android-plugin-samples-c664bcf/scala/src'
@@ -8,3 +8,4 @@ let g:netrw_dirhist_5='/Users/zheng/Downloads'
 let g:netrw_dirhist_6='/Users/zheng/Documents/github/twitter4j'
 let g:netrw_dirhist_7='/Users/zheng/Documents/github/twitter4j/twitter4j-appengine'
 let g:netrw_dirhist_8='/Users/zheng/Documents/github/twitter4j'
+let g:netrw_dirhist_9='/Users/zheng/.dotfiles'
