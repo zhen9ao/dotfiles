@@ -17,6 +17,7 @@ vmap <D-]> >gv
 
 "few options make thins better
 "set encoding=utf-8
+" Preferences {{{1
 set fileencodings=utf-8,gbk,ucs-bom,cp936
 set scrolloff=3
 set autoindent
@@ -40,6 +41,32 @@ set directory=~/.tmp
 set ffs=unix,mac,dos
 set spell
 
+set visualbell t_vb=
+set number
+set cursorline
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+set hidden
+set nojoinspaces
+set listchars=tab:▸\ ,eol:¬
+set wildmode=longest,list
+set nrformats=
+
+"set spelllang=en_gb
+" Put swap files in /tmp file
+if has("autocmd")
+  autocmd FileType html,css,scss,ruby,pml,yaml,coffee,vim setlocal ts=2 sts=2 sw=2 expandtab
+  autocmd FileType javascript setlocal ts=4 sts=4 sw=4 noexpandtab
+  autocmd BufNewFile,BufRead ~/projects/sencha/**/*.js setlocal ts=4 sts=4 sw=4 et
+  autocmd FileType markdown setlocal wrap linebreak nolist
+  autocmd BufNewFile,BufRead *.rss setfiletype xml
+  autocmd BufNewFile,BufRead Rakefile,Capfile,Gemfile,Termfile,Vagrantfile,config.ru setfiletype ruby
+  autocmd FileType ruby :Abolish -buffer initialise initialize
+  autocmd FileType vo_base :colorscheme solarized
+  autocmd BufNewFile,BufRead ~/dotfiles/vim/macros/*,~/.vim/macros/* setfiletype viminfo
+endif
 
 "change the leader key
 let mapleader=","
@@ -86,7 +113,7 @@ vnoremap <F1> <ESC>
 
 "save on losing focus
 
-au Focuslost * :wa
+"au Focuslost * :wa
 
 "map jj to <ESC>
 inoremap qq <ESC>
@@ -117,6 +144,43 @@ map <leader>es :sp %%
 map <leader>ev :vsp %%
 map <leader>et :tabe %%
 map <leader>er :e <C-R>=expand("%:r")."."<CR>
+
+" Only do this part when compiled with support for autocommands.
+if has("autocmd")
+
+  " Enable file type detection.
+  " Use the default filetype settings, so that mail gets 'tw' set to 72,
+  " 'cindent' is on in C files, etc.
+  " Also load indent files, to automatically do language-dependent indenting.
+  filetype plugin indent on
+
+  " Put these in an autocmd group, so that we can delete them easily.
+  augroup vimrcEx
+  au!
+
+  " For all text files set 'textwidth' to 78 characters.
+  autocmd FileType text setlocal textwidth=78
+
+  " When editing a file, always jump to the last known cursor position.
+  " Don't do it when the position is invalid or when inside an event handler
+  " (happens when dropping a file on gvim).
+  " Also don't do it when the mark is in the first line, that is the default
+  " position when opening a file.
+  autocmd BufReadPost *
+    \ if line("'\"") > 1 && line("'\"") <= line("$") |
+    \   exe "normal! g`\"" |
+    \ endif
+
+  augroup END
+
+else
+
+  set autoindent		" always set autoindenting on
+
+endif " has("autocmd")
+
+
+
 
 "for yanking...
 nnoremap <silent> <F3> :YRShow<cr>
