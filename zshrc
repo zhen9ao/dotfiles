@@ -28,6 +28,10 @@ GWT=/Users/zheng/Documents/gwt-2.1.1
 
 PATH=/usr/local/bin:/usr/local/sbin:/usr/local/Cellar/gettext/0.17/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/usr/X11/bin:$GAE/bin:$GWT:$ADT:~/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools:$M2_HOME:$M2
 export PATH
+launchctl setenv PATH $PATH
+launchctl setenv ANDROID_HOME $ANDROID_HOME
+launchctl setenv M2_HOME $M2_HOME
+
 # set the number of open files to be 1024                                                      
 ulimit -S -n 1024
 
