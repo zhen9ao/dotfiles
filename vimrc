@@ -1,8 +1,7 @@
-"Ctag
-let Tlist_Ctags_cmd='/usr/local/bin/ctags'
 "initial settings
 filetype off
-call pathogen#runtime_append_all_bundles()
+"call pathogen#runtime_append_all_bundles()
+call pathogen#infect()
 filetype plugin indent on
 set nocompatible
 set modelines=0
@@ -211,3 +210,4 @@ else
 endif
 
 "Ctag
+let Tlist_Ctags_cmd='/usr/local/bin/ctags'
