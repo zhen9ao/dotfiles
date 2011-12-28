@@ -1,3 +1,5 @@
+"Ctag
+let Tlist_Ctags_cmd='/usr/local/bin/ctags'
 "initial settings
 filetype off
 call pathogen#runtime_append_all_bundles()
@@ -59,7 +61,7 @@ set nrformats=
 if has("autocmd")
   autocmd FileType html,css,scss,ruby,pml,yaml,coffee,vim setlocal ts=2 sts=2 sw=2 expandtab
   autocmd FileType javascript setlocal ts=4 sts=4 sw=4 noexpandtab
-  autocmd FileType python setlocal ts=2 sts=2 sw=2 expandtab
+  autocmd FileType python setlocal ts=4 sts=4 sw=4 expandtab smarttab
   autocmd BufNewFile,BufRead ~/projects/sencha/**/*.js setlocal ts=4 sts=4 sw=4 et
   autocmd FileType markdown setlocal wrap linebreak nolist
   autocmd BufNewFile,BufRead *.rss setfiletype xml
@@ -207,3 +209,5 @@ else
     set background=dark
     colorscheme solarized
 endif
+
+"Ctag
