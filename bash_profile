@@ -10,8 +10,10 @@ export ANDROID_HOME=/Users/zheng/Documents/Android/android-sdk-mac_x86
 
 GAE=/Users/zheng/Documents/Google/appengine-java-sdk-1.5.0
 GWT=/Users/zheng/Documents/gwt-2.1.1
+GO=/usr/local/go/bin
+NDK=/Users/zheng/Documents/Android/android-ndk-r8
 
-PATH=/usr/local/bin:/usr/local/sbin:/usr/local/Cellar/gettext/0.17/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/usr/X11/bin:$GAE/bin:$GWT:$ADT:~/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools:$M2_HOME:$M2
+PATH=/usr/local/bin:/usr/local/sbin:/usr/local/Cellar/gettext/0.17/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/usr/X11/bin:$GAE/bin:$GWT:$ADT:~/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools:$M2_HOME:$M2:$GO:$NDK
 export PATH
 launchctl setenv PATH $PATH
 launchctl setenv ANDROID_HOME $ANDROID_HOME
