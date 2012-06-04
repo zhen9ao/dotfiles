@@ -23,3 +23,6 @@ launchctl setenv M2_HOME $M2_HOME
 ulimit -S -n 1024
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
+
+# mount the android file image
+function mountAndroid { hdiutil attach /Volumes/Data/android.dmg.sparseimage -mountpoint /Volumes/android; }
