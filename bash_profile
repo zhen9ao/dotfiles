@@ -18,6 +18,9 @@ alias ll='ls -al'
 
 export HISTTIMEFORMAT="%Y-%m-%d %H:%M:%S "
 
+JAVA_HOME=/Library/Java/JavaVirtualMachines/1.7.0.jdk/Contents/Home
+#JAVA_HOME=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
+export JAVA_HOME=$JAVA_HOME
 MAVEN=/usr/local/Cellar/maven/3.0.3/libexec
 export M2_HOME=$MAVEN
 export M2=$M2_HOME/bin
