@@ -46,7 +46,8 @@ var gfwed_list = [
 	"wsj.net",
 	"yfrog.com",
 	"youtube.com",
-	"ytimg.com"
+	"ytimg.com",
+	"yimg.com"
 ];
 
 var gfwed = {};
