@@ -14,6 +14,7 @@ var gfwed_list = [
 	"bitly.com",
 	"blogger.com",
 	"blogspot.com",
+	"cloudfront.net",
 	"cl.ly",
 	"doubleclick.net",
 	"facebook.com",
@@ -47,7 +48,9 @@ var gfwed_list = [
 	"yfrog.com",
 	"youtube.com",
 	"ytimg.com",
-	"yimg.com"
+	"yimg.com",
+	"instagr.am",
+	"instagram.com"
 ];
 
 var gfwed = {};
