@@ -1,5 +1,6 @@
 var direct = 'DIRECT';
 var http_proxy = 'SOCKS5 127.0.0.1:7777; SOCKS 127.0.0.1:7777; DIRECT';
+//var http_proxy = 'PROXY 127.0.0.1:8087';
 
 var gfwed_list = [
 	"adzerk.net",
