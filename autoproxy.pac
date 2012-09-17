@@ -15,6 +15,7 @@ var gfwed_list = [
 	"bitly.com",
 	"blogger.com",
 	"blogspot.com",
+	"blogspot.jp",
 	"cloudfront.net",
 	"cl.ly",
 	"doubleclick.net",
