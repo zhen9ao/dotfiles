@@ -16,6 +16,21 @@ alias ll='ls -al'
 #alias fgrep='fgrep $LS_OPTIONS'
 #alias egrep='egrep $LS_OPTIONS'
 
+#Git aliases
+alias ga='git add'
+alias gp='git push'
+alias gl='git log'
+alias gs='git status'
+alias gd='git diff'
+alias gm='git commit -m'
+alias gma='git commit -am'
+alias gb='git branch'
+alias gc='git checkout'
+alias gra='git remote add'
+alias grr='git remote rm'
+alias gpu='git pull'
+alias gcl='git clone'
+
 export HISTTIMEFORMAT="%Y-%m-%d %H:%M:%S "
 
 #JAVA_HOME=/Library/Java/JavaVirtualMachines/1.7.0.jdk/Contents/Home
