@@ -1,6 +1,6 @@
-My dotfiles.
+﻿My dotfiles.
 
-第一次使用注意：
+First time:
 
 1. 使用Homebrew安装coreutils
 
