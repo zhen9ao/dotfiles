@@ -40,7 +40,7 @@ export JAVA_HOME=$JAVA_HOME
 MAVEN=/usr/local/Cellar/maven/3.0.4/libexec
 export M2_HOME=$MAVEN
 export M2=$M2_HOME/bin
-export ANDROID_HOME=/Users/Jack/Documents/Android/android-sdk-mac_x86
+export ANDROID_HOME=/Volumes/Data/Android/android-sdk-mac_x86
 
 GAE=/Users/Jack/Documents/Google/appengine-java-sdk-1.5.0
 GWT=/Users/Jack/Documents/gwt-2.1.1
