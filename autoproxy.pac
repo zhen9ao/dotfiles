@@ -41,6 +41,7 @@ var gfwed_list = [
 	"revsci.net",
 	"shawngrimes.me",
 	"staticflickr.com",
+    "sfileydy.com",
 	"t.co",
 	"twimg.com",
 	"twitpic.com",
