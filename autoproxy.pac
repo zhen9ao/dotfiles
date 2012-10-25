@@ -28,6 +28,7 @@ var gfwed_list = [
 	"gmail.com",
 	"goo.gl",
 	"google.com",
+    "googleapis.com",
 	"googletagservices.com",
 	"googleusercontent.com",
 	"gravatar.com",
