@@ -1,7 +1,8 @@
 "initial settings
 filetype off
-"call pathogen#runtime_append_all_bundles()
-call pathogen#infect()
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+" call pathogen#infect()
 filetype plugin indent on
 set nocompatible
 set modelines=0
@@ -17,7 +18,7 @@ vmap <D-[> <gv
 vmap <D-]> >gv
 
 "few options make thins better
-"set encoding=utf-8
+set encoding=utf-8
 " Preferences {{{1
 set fileencodings=utf-8,gbk,ucs-bom,cp936
 set scrolloff=3
