@@ -89,4 +89,4 @@ alias lh='ll -h'
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-eval `gdircolors`
+eval `gdircolors /Users/Jack/.dotfiles/dir_colors/dircolors-solarized/dircolors.ansi-dark`
