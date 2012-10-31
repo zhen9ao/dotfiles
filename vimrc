@@ -205,6 +205,7 @@ if has("gui_running")
     set background=dark
     colorscheme solarized
     set showtabline=2
+    set guifont=Monaco\ for\ Powerline
 else
     set background=dark
     set t_Co=256
@@ -229,3 +230,6 @@ let Tlist_Compact_Format = 1
 let Tlist_Exit_OnlyWindow = 1
 let Tlist_GainFocus_On_ToggleOpen = 1
 let Tlist_File_Fold_Auto_Close = 1
+
+"Powerline
+let g:Powerline_symbols = 'fancy'
