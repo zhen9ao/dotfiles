@@ -207,6 +207,7 @@ if has("gui_running")
     set showtabline=2
 else
     set background=dark
+    set t_Co=256
     colorscheme solarized
 endif
 

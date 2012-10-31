@@ -28,3 +28,6 @@
 [submodule "vim/bundle/vim-powerline"]
 	path = vim/bundle/vim-powerline
 	url = https://github.com/Lokaltog/vim-powerline.git
+[submodule "dir_colors/dircolors-solarized"]
+	path = dir_colors/dircolors-solarized
+	url = https://github.com/seebi/dircolors-solarized.git

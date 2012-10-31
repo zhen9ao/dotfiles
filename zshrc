@@ -34,6 +34,9 @@ plugins=(git ruby osx)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+
+
+
 #JAVA_HOME=/Library/Java/JavaVirtualMachines/1.7.0.jdk/Contents/Home
 JAVA_HOME=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
 export JAVA_HOME=$JAVA_HOME
@@ -62,7 +65,7 @@ ulimit -S -n 1024
 rvm --default 1.9.3
 
 # mount the android file image
-function mountAndroid { hdiutil attach /Volumes/Data/android.dmg.sparseimage -mountpoint /Volumes/android; }
+# function mountAndroid { hdiutil attach /Volumes/Data/android.dmg.sparseimage -mountpoint /Volumes/android; }
 # set the number of open files to be 1024
 ulimit -S -n 1024
 
@@ -85,3 +88,5 @@ alias lh='ll -h'
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+eval `gdircolors .dir_color`
