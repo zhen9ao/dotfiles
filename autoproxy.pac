@@ -24,6 +24,7 @@ var gfwed_list = [
 	"feedburner.com",
 	"feedsportal.com",
     "flickr.com",
+    "staticflickr.com",
 	"git-scm.com",
 	"gmail.com",
 	"goo.gl",
