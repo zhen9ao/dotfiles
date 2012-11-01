@@ -50,6 +50,7 @@ var gfwed_list = [
 	"twitpic.com",
 	"twitter.com",
     "thepiratebay.se",
+    "tumblr.com",
 	"vimeo.com",
 	"wordpress.com",
 	"wsj.net",
