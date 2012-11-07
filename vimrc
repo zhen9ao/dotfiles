@@ -12,6 +12,19 @@ set modelines=0
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
+" Vundle bundles
+Bundle 'scrooloose/nerdtree'
+Bundle 'mileszs/ack.vim'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'rstacruz/sparkup'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-git'
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-repeat'
+Bundle 'vim-ruby/vim-ruby'
+Bundle 'tpope/vim-surround'
+
 " Mappings for a recovering TextMate user {{{1
 " Indentation {{{2
 nmap <D-[> <<
@@ -216,7 +229,7 @@ if has("gui_running")
     set background=dark
     colorscheme solarized
     set showtabline=2
-    set guifont=Monaco\ for\ Powerline
+    set guifont=Monaco\ for\ Powerline:h14
 else
     set background=dark
     set t_Co=256
