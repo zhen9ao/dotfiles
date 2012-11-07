@@ -1,29 +1,32 @@
 " initial settings
 filetype off
-call pathogen#runtime_append_all_bundles()
+" call pathogen#runtime_append_all_bundles()
 " call pathogen#helptags()
 " call pathogen#infect()
+" Vundle
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
 syntax on
 filetype plugin indent on
 set nocompatible
 set modelines=0
 
-" Vundle
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
 
 " Vundle bundles
 Bundle 'scrooloose/nerdtree'
-Bundle 'mileszs/ack.vim'
 Bundle 'scrooloose/nerdcommenter'
-Bundle 'rstacruz/sparkup'
+Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-git'
-Bundle 'Lokaltog/vim-powerline'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-repeat'
-Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-surround'
+Bundle 'vim-ruby/vim-ruby'
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'kien/ctrlp.vim'
+Bundle 'myusuf3/numbers.vim'
+Bundle 'mileszs/ack.vim'
 
 " Mappings for a recovering TextMate user {{{1
 " Indentation {{{2
@@ -49,7 +52,7 @@ set ttyfast
 set ruler
 set backspace=indent,eol,start
 set laststatus=2
-set relativenumber
+" set relativenumber
 " Set number
 set undofile
 set history=1000
@@ -130,7 +133,6 @@ nnoremap <leader>a :Ack
 
 nnoremap <leader>o :open 
 
-nnoremap <leader>y :YRShow
 
 " Get rid of function keys
 inoremap <F1> <ESC>
@@ -172,6 +174,14 @@ map <leader>es :sp %%
 map <leader>ev :vsp %%
 map <leader>et :tabe %%
 map <leader>er :e <C-R>=expand("%:r")."."<CR>
+
+" vim-fugitive maps
+map <leader>gs :Gstatus<CR>
+map <leader>gd :Gdiff<CR>
+map <leader>gc :Gcommit<CR>
+map <leader>gb :Gblame<CR>
+map <leader>gl :Glog<CR>
+map <leader>gp :Git push<CR>
 
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
