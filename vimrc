@@ -1,14 +1,16 @@
-"initial settings
+" initial settings
 filetype off
 call pathogen#runtime_append_all_bundles()
 " call pathogen#helptags()
 " call pathogen#infect()
+syntax on
 filetype plugin indent on
 set nocompatible
 set modelines=0
 
-"tab settings
-set ts=4 sts=4 sw=4 expandtab
+" Vundle
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
 
 " Mappings for a recovering TextMate user {{{1
 " Indentation {{{2
@@ -17,7 +19,7 @@ nmap <D-]> >>
 vmap <D-[> <gv
 vmap <D-]> >gv
 
-"few options make thins better
+" Few options make thins better
 set encoding=utf-8
 " Preferences {{{1
 set fileencodings=utf-8,gbk,ucs-bom,cp936
@@ -35,6 +37,7 @@ set ruler
 set backspace=indent,eol,start
 set laststatus=2
 set relativenumber
+" Set number
 set undofile
 set history=1000
 set undodir=~/.tmp/undodir
@@ -43,8 +46,8 @@ set directory=~/.tmp
 set ffs=unix,mac,dos
 set spell
 
+" Tab settings
 set visualbell t_vb=
-set number
 set cursorline
 set tabstop=4
 set softtabstop=4
@@ -56,7 +59,7 @@ set listchars=tab:▸\ ,eol:¬
 set wildmode=longest,list
 set nrformats=
 
-"set spelllang=en_gb
+" Set spelllang=en_gb
 " Put swap files in /tmp file
 if has("autocmd")
   autocmd FileType html,css,scss,ruby,pml,yaml,coffee,vim setlocal ts=2 sts=2 sw=2 expandtab
@@ -71,10 +74,10 @@ if has("autocmd")
   autocmd BufNewFile,BufRead ~/dotfiles/vim/macros/*,~/.vim/macros/* setfiletype viminfo
 endif
 
-"change the leader key
+" Change the leader key
 let mapleader=","
 
-"searching/moving
+" Searching/moving
 nnoremap / /\v
 vnoremap / /\v
 set ignorecase
@@ -87,46 +90,55 @@ nnoremap <leader><space> :noh<cr>
 nnoremap <tab> %
 vnoremap <tab> %
 
-"makes vim handle long lines correctly
+" Makes vim handle long lines correctly
 set wrap
 set textwidth=79
 set formatoptions=qrn1
 set colorcolumn=85
 
-"TextMate styles
+" TextMate styles
 set list
 set listchars=tab:▸\ ,eol:¬
 
-"Map keys, disable the arrow keys
-nnoremap <up> <nop>
-nnoremap <down> <nop>
-nnoremap <left> <nop>
-nnoremap <right> <nop>
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
+" Map keys, disable the arrow keys
+" nnoremap <up> <nop>
+" nnoremap <down> <nop>
+" nnoremap <left> <nop>
+" nnoremap <right> <nop>
+" inoremap <up> <nop>
+" inoremap <down> <nop>
+" inoremap <left> <nop>
+" inoremap <right> <nop>
 nnoremap j gj
 nnoremap k gk
 
-"get rid of function keys
+" Ack key mapping
+nnoremap <leader>a :Ack 
+
+nnoremap <leader>o :open 
+
+nnoremap <leader>y :YRShow
+
+" Get rid of function keys
 inoremap <F1> <ESC>
 nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
 
-"save on losing focus
+" Let ; do the same thing as :
+nnoremap ; :
 
-"au Focuslost * :wa
+" Save on losing focus
+au Focuslost * :wa
 
-"map jj to <ESC>
-inoremap qq <ESC>
+"map jj  to <ESC>
+inoremap jj <ESC>
 
-"Speed up buffer switching
+" Speed up buffer switching
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
-"Speed up tab switching
+" Speed up tab switching
 map <D-S-]> gt
 map <D-S-[> gT
 map <D-1> 1gt
@@ -196,7 +208,6 @@ set shell=/bin/zsh
 vmap <D-/> \\gv
 map <D-/> \\\
 
-syntax on
 
 if has("gui_running")
     set guioptions=egmrt
@@ -212,8 +223,8 @@ else
     colorscheme solarized
 endif
 
-"Ctag
-"let Tlist_Ctags_cmd='/usr/local/bin/ctags'
+" Ctag
+" Let Tlist_Ctags_cmd='/usr/local/bin/ctags'
 " Taglist variables
 " Display function name in status bar:
 let g:ctags_statusline=1
@@ -231,5 +242,7 @@ let Tlist_Exit_OnlyWindow = 1
 let Tlist_GainFocus_On_ToggleOpen = 1
 let Tlist_File_Fold_Auto_Close = 1
 
-"Powerline
+" Powerline
 let g:Powerline_symbols = 'fancy'
+
+silent! call repeat#set("\<Plug>MyWonderfulMap", v:count)
