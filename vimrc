@@ -52,8 +52,6 @@ set ttyfast
 set ruler
 set backspace=indent,eol,start
 set laststatus=2
-" set relativenumber
-" Set number
 set undofile
 set history=1000
 set undodir=~/.tmp/undodir
@@ -176,12 +174,12 @@ map <leader>et :tabe %%
 map <leader>er :e <C-R>=expand("%:r")."."<CR>
 
 " vim-fugitive maps
-map <leader>gs :Gstatus<CR>
-map <leader>gd :Gdiff<CR>
-map <leader>gc :Gcommit<CR>
-map <leader>gb :Gblame<CR>
-map <leader>gl :Glog<CR>
-map <leader>gp :Git push<CR>
+map <leader>gs :Gstatus
+map <leader>gd :Gdiff
+map <leader>gc :Gcommit
+map <leader>gb :Gblame
+map <leader>gl :Glog
+map <leader>gp :Git push
 
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
@@ -216,9 +214,6 @@ else
   set autoindent		" always set autoindenting on
 
 endif " has("autocmd")
-
-
-
 
 "for yanking...
 nnoremap <silent> <F3> :YRShow<cr>
