@@ -1,16 +1,15 @@
 let mapleader=","
 
-nmap / /\v
-vmap / /\v
 set ignorecase
 set smartcase
 set gdefault
 set incsearch
 set showmatch
 set hlsearch
-nnoremap <leader><space> :noh<cr>
-nnoremap <tab> %
-vnoremap <tab> %
+nmap <leader><space> :noh<cr>
+nmap <tab> %
+vmap <tab> %
 
 set cursorline
 
+imap jj <ESC>
