@@ -56,9 +56,6 @@ launchctl setenv PATH $PATH
 launchctl setenv ANDROID_HOME $ANDROID_HOME
 launchctl setenv M2_HOME $M2_HOME
 
-# set the number of open files to be 1024
-ulimit -S -n 1024
-
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
 
 # default ruby version
