@@ -1,0 +1,22 @@
+##
+# Host Database
+#
+# localhost is used to configure the loopback interface
+# when the system is booting.  Do not change this entry.
+##
+127.0.0.1	localhost
+255.255.255.255	broadcasthost
+::1             localhost 
+fe80::1%lo0	localhost
+
+# Parallels Desktop
+127.0.0.1 pd7.blist.parallels.com
+127.0.0.1 pdfm7.vl.parallels.com
+127.0.0.1 registration.parallels.com
+127.0.0.1 update.parallels.com
+127.0.0.1 pdfm7.cepreport.parallels.com
+
+# Work
+172.17.5.121 gitsvr
+172.17.5.31 ovs1
+172.17.5.34 ovs2

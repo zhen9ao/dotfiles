@@ -34,6 +34,7 @@ var gfwed_list = [
 	"googletagservices.com",
 	"googleusercontent.com",
 	"gravatar.com",
+    "iphone-dev.org",
 	"j.mp",
 	"mediafire.com",
 	"openvpn.net",
