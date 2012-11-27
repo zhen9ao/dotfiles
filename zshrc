@@ -87,3 +87,8 @@ alias lh='ll -h'
 export PATH="/usr/local/heroku/bin:$PATH"
 
 eval `gdircolors /Users/Jack/.dotfiles/dir_colors/dircolors-solarized/dircolors.ansi-dark`
+
+# For CocoaPods
+function wopen {
+    open ${PWD##*/}.xcworkspace
+} # open Xcode workspace

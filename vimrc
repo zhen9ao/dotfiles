@@ -83,7 +83,7 @@ if has("autocmd")
   autocmd FileType markdown setlocal wrap linebreak nolist
   autocmd BufNewFile,BufRead *.rss setfiletype xml
   autocmd BufNewFile,BufRead Rakefile,Capfile,Gemfile,Termfile,Vagrantfile,config.ru setfiletype ruby
-  autocmd FileType ruby :Abolish -buffer initialise initialize
+  " autocmd FileType ruby :Abolish -buffer initialise initialize
   autocmd FileType vo_base :colorscheme solarized
   autocmd BufNewFile,BufRead ~/dotfiles/vim/macros/*,~/.vim/macros/* setfiletype viminfo
 endif
