@@ -143,8 +143,8 @@ nnoremap ; :
 " Save on losing focus
 au Focuslost * :wa
 
-"map jj  to <ESC>
-inoremap jj <ESC>
+"map qq  to <ESC>
+inoremap qq <ESC>
 
 " Speed up buffer switching
 nnoremap <C-h> <C-w>h

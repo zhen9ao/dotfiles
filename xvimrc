@@ -12,4 +12,4 @@ vmap <tab> %
 
 set cursorline
 
-imap jj <ESC>
+imap qq <ESC>
