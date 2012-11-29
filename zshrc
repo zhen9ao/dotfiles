@@ -56,11 +56,6 @@ launchctl setenv PATH $PATH
 launchctl setenv ANDROID_HOME $ANDROID_HOME
 launchctl setenv M2_HOME $M2_HOME
 
-[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
-
-# default ruby version
-rvm --default 1.9.3
-
 # mount the android file image
 # function mountAndroid { hdiutil attach /Volumes/Data/android.dmg.sparseimage -mountpoint /Volumes/android; }
 # set the number of open files to be 1024
@@ -92,3 +87,6 @@ eval `gdircolors /Users/Jack/.dotfiles/dir_colors/dircolors-solarized/dircolors.
 function wopen {
     open ${PWD##*/}.xcworkspace
 } # open Xcode workspace
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+#rvm --default 1.9.3
