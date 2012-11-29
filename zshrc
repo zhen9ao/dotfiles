@@ -89,4 +89,4 @@ function wopen {
 } # open Xcode workspace
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
-#rvm --default 1.9.3
+rvm --default 1.9.3
