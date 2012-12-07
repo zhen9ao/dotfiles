@@ -52,9 +52,12 @@ NDK=/Users/Jack/Documents/Android/android-ndk-r8
 
 PATH=/usr/local/bin:/usr/local/Cellar/gettext/0.17/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/usr/X11/bin:$GAE/bin:$GWT:~/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools:$M2_HOME:$M2:$GO:$NDK
 export PATH
-launchctl setenv PATH $PATH
-launchctl setenv ANDROID_HOME $ANDROID_HOME
-launchctl setenv M2_HOME $M2_HOME
+
+if [ -f /bin/launchctl ]; then
+    launchctl setenv PATH $PATH
+    launchctl setenv ANDROID_HOME $ANDROID_HOME
+    launchctl setenv M2_HOME $M2_HOME
+fi
 
 # mount the android file image
 # function mountAndroid { hdiutil attach /Volumes/Data/android.dmg.sparseimage -mountpoint /Volumes/android; }
@@ -81,12 +84,22 @@ alias lh='ll -h'
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-eval `gdircolors ~/.dotfiles/dir_colors/dircolors-solarized/dircolors.ansi-dark`
+# For dir_colors
+if [ -f /usr/local/bin/gdircolors ]; then
+    eval `gdircolors ~/.dotfiles/dir_colors/dircolors-solarized/dircolors.ansi-dark`
+fi
+
+if [ -f /usr/bin/dircolors ]; then
+    eval `dircolors ~/.dotfiles/dir_colors/dircolors-solarized/dircolors.ansi-dark`
+fi
 
 # For CocoaPods
 function wopen {
     open ${PWD##*/}.xcworkspace
 } # open Xcode workspace
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
-rvm --default 1.9.3
+# For ruby
+if [ -f ~/.rvm ]; then
+    [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+    rvm --default 1.9.3
+fi
