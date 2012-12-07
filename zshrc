@@ -81,7 +81,7 @@ alias lh='ll -h'
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-eval `gdircolors /Users/Jack/.dotfiles/dir_colors/dircolors-solarized/dircolors.ansi-dark`
+eval `gdircolors ~/.dotfiles/dir_colors/dircolors-solarized/dircolors.ansi-dark`
 
 # For CocoaPods
 function wopen {
