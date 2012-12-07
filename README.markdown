@@ -12,4 +12,4 @@
 
 * 安装oh-my-zsh：`curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh`。
 
-* 运行`./oh-my-zsh/make_a_link.sh` 
+* 复制`oh-my-zsh/powerline.zsh-theme` 到 `~/.oh-my-zsh/themes/`
