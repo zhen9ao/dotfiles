@@ -1,4 +1,5 @@
 " initial settings
+set nocompatible
 filetype off
 " call pathogen#runtime_append_all_bundles()
 " call pathogen#helptags()
@@ -6,12 +7,6 @@ filetype off
 " Vundle
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
-
-syntax on
-filetype plugin indent on
-set nocompatible
-set modelines=0
-
 
 " Vundle bundles
 Bundle 'scrooloose/nerdtree'
@@ -28,6 +23,11 @@ Bundle 'Lokaltog/vim-powerline'
 Bundle 'kien/ctrlp.vim'
 Bundle 'myusuf3/numbers.vim'
 Bundle 'mileszs/ack.vim'
+
+filetype plugin indent on
+
+syntax on
+set modelines=0
 
 " Mappings for a recovering TextMate user {{{1
 " Indentation {{{2
