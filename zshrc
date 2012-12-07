@@ -99,7 +99,7 @@ function wopen {
 } # open Xcode workspace
 
 # For ruby
-if [ -f ~/.rvm ]; then
+if [ -d ~/.rvm ]; then
     [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
     rvm --default 1.9.3
 fi
