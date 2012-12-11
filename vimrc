@@ -228,18 +228,14 @@ vmap <D-/> \\gv
 map <D-/> \\\
 
 
+set t_Co=256
+set background=dark
+colorscheme solarized
 if has("gui_running")
     set guioptions=egmrt
     set guioptions-=T
-    set t_Co=256
-    set background=dark
-    colorscheme solarized
     set showtabline=2
     set guifont=Monaco\ for\ Powerline:h14
-else
-    set background=dark
-    set t_Co=256
-    colorscheme solarized
 endif
 
 " Ctag
