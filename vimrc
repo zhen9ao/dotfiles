@@ -140,7 +140,7 @@ nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
 
 " Let ; do the same thing as :
-nnoremap ; :
+" nnoremap ; :
 
 " Save on losing focus
 au Focuslost * :wa
