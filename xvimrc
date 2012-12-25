@@ -7,7 +7,6 @@ set incsearch
 set showmatch
 set hlsearch
 nmap <leader><space> :noh<cr>
-nmap ; :
 nmap <tab> %
 vmap <tab> %
 
