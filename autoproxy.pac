@@ -21,6 +21,7 @@ var gfwed_list = [
 	"cl.ly",
     "chicagotribune.com",
 	"doubleclick.net",
+	"dlvr.it",
 	"facebook.com",
 	"fbcdn.net",
 	"feedburner.com",
