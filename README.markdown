@@ -15,3 +15,5 @@
 * 复制`oh-my-zsh/powerline.zsh-theme` 到 `~/.oh-my-zsh/themes/`
 
 * 删除自动创建的.zshrc文件，重建链接`.zshrc`
+
+* 在这里下载一个字体文件，用于powerline图标的显示：https://github.com/Lokaltog/vim-powerline/wiki/Patched-fonts 。双击安装后，在iterms中选择字体为该字体即可。
