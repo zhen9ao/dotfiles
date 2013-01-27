@@ -32,6 +32,7 @@ var gfwed_list = [
 	"gmail.com",
 	"goo.gl",
 	"google.com",
+    "google.com.hk",
 	"googletagservices.com",
 	"googleusercontent.com",
 	"gravatar.com",
