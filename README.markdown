@@ -1,4 +1,5 @@
-##My dotfiles.
+##My dotfiles. Works fine on both Mac and Ubuntu
+
 
 * Clone This Project using `git clone` to a directory such as ~/.dotfiles
 
