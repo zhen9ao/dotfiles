@@ -1,21 +1,24 @@
 ##My dotfiles.
 
+* Clone This Project using `git clone` to a directory such as ~/.dotfiles
 
+* Update the submodules `git submodule init` and `git submodule update`
 
-* Mac: 使用Homebrew安装coreutils
+* For Mac users, install `coreutils` using `Homebrew`
 
-* 在～目录创建.tmp文件夹
+* Make a temporary directory `~/.tmp`
 
-* 建立链接 `.bash_profile` `.dir_color`  `.vim`  `.vimrc` `.gvimrc`
+* Make file alias such as `.dir_color`, `.vim`, `.vimrc`, `.gvimrc`
 
-* 安装zsh：Mac: `brew install zsh`，Ubuntu: `sudo apt-get install zsh`
+* Install zsh: Mac: `brew install zsh`, Ubuntu: `sudo apt-get install zsh`
 
-* 安装oh-my-zsh：`curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh`。
+* Install `oh-my-zsh`: `curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh`
 
-* 复制`oh-my-zsh/powerline.zsh-theme` 到 `~/.oh-my-zsh/themes/`
+* `cp .dotfiles/oh-my-zsh/powerline.zsh-theme ~/.oh-my-zsh/themes/`
 
-* 删除自动创建的.zshrc文件，重建链接`.zshrc`
+* Remove file `.zshrc`, re-create file alias `.zshrc`
 
-* Ubuntu下可能要手动切换默认的shell，使用命令`chsh`将shell切换为`/bin/zsh`
+* Change the default to `zsh` under Ubuntu using: `chsh`, and input `/bin/zsh`
+  after prompt
 
-* 在这里下载一个字体文件，用于powerline图标的显示：https://github.com/Lokaltog/vim-powerline/wiki/Patched-fonts 。双击安装后，在iterms中选择字体为该字体即可，字号14为佳。
+* For GUI users, download a font file for the powerline icons: https://github.com/Lokaltog/vim-powerline/wiki/Patched-fonts. And change the font size to `14` in `iTerm`
