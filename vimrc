@@ -88,6 +88,7 @@ if has("autocmd")
   " autocmd FileType ruby :Abolish -buffer initialise initialize
   autocmd FileType vo_base :colorscheme solarized
   autocmd BufNewFile,BufRead ~/dotfiles/vim/macros/*,~/.vim/macros/* setfiletype viminfo
+  autocmd BufNewFile,BufRead Podfile,*.podspec setfiletype ruby
 endif
 
 " Change the leader key

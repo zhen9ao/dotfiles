@@ -80,6 +80,7 @@ alias gpu='git pull'
 alias gcl='git clone'
 
 alias lh='ll -h'
+alias la='ls -la'
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"

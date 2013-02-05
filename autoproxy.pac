@@ -20,6 +20,7 @@ var gfwed_list = [
 	"cloudfront.net",
 	"cl.ly",
     "chicagotribune.com",
+    "cocoapods.org",
 	"doubleclick.net",
 	"dlvr.it",
 	"facebook.com",
