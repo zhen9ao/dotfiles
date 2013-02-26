@@ -51,7 +51,6 @@ GO=/usr/local/go/bin
 NDK=/Users/Jack/Documents/Android/android-ndk-r8
 
 PATH=/usr/local/sbin:/usr/local/bin:/usr/local/Cellar/gettext/0.17/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/usr/X11/bin:$GAE/bin:$GWT:~/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools:$M2_HOME:$M2:$GO:$NDK
-export PATH
 
 if [ -f /bin/launchctl ]; then
     launchctl setenv PATH $PATH
