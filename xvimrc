@@ -13,3 +13,4 @@ vmap <tab> %
 set cursorline
 
 imap qq <ESC>
+nmap ? :xhelp<cr>
