@@ -66,6 +66,7 @@ ulimit -S -n 1024
 #Git aliases
 alias ga='git add'
 alias gp='git push'
+alias gf='git fetch'
 alias gl='git log'
 alias gs='git status'
 alias gd='git diff'
