@@ -3,9 +3,12 @@
 	email = zhen9ao@gmail.com
 [core]
 	excludesfile = /Users/Jack/.gitignore_global
+	editor = /usr/local/bin/vim
 [difftool "sourcetree"]
 	cmd = /usr/local/bin/twdiff --resume --reverse --wait \"$LOCAL\" \"$REMOTE\"
 	path = 
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+[push]
+	default = upstream
