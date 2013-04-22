@@ -148,7 +148,7 @@ vnoremap <F1> <ESC>
 au Focuslost * :wa
 
 "map qq  to <ESC>
-inoremap qq <ESC>
+inoremap jj <ESC>
 
 " Speed up buffer switching
 nnoremap <C-h> <C-w>h
