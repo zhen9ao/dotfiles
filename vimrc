@@ -25,6 +25,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'myusuf3/numbers.vim'
 Bundle 'mileszs/ack.vim'
 Bundle 'msanders/cocoa.vim'
+Bundle 'sukima/xmledit'
 
 filetype plugin indent on
 
