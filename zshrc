@@ -102,7 +102,6 @@ function wopen {
 # For ruby
 if [ -d ~/.rvm ]; then
     [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
-    rvm --default 1.9.3
 fi
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
