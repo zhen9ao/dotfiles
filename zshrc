@@ -14,6 +14,7 @@ ZSH_THEME="simple"
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
+DISABLE_UPDATE_PROMPT=true
 # Comment this out to disable weekly auto-update checks
 # DISABLE_AUTO_UPDATE="true"
 
