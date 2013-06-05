@@ -106,3 +106,6 @@ if [ -d ~/.rvm ]; then
 fi
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+# For Homebrew-cask
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
