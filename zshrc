@@ -88,11 +88,11 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 # For dir_colors
 if [ -f /usr/local/bin/gdircolors ]; then
-    eval `gdircolors ~/.dotfiles/dir_colors/dircolors-solarized/dircolors.ansi-dark`
+    eval `gdircolors ~/.dotfiles/dir_colors/dircolors-solarized/dircolors.256dark`
 fi
 
 if [ -f /usr/bin/dircolors ]; then
-    eval `dircolors ~/.dotfiles/dir_colors/dircolors-solarized/dircolors.ansi-dark`
+    eval `dircolors ~/.dotfiles/dir_colors/dircolors-solarized/dircolors.256dark`
 fi
 
 # For CocoaPods
