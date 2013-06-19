@@ -14,6 +14,9 @@ ZSH_THEME="simple"
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
+# Stop auto correct
+unsetopt correct
+
 DISABLE_UPDATE_PROMPT=true
 # Comment this out to disable weekly auto-update checks
 # DISABLE_AUTO_UPDATE="true"
@@ -83,7 +86,7 @@ alias gcl='git clone'
 alias lh='ll -h'
 alias la='ls -la'
 
-### Added by the Heroku Toolbelt
+# Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
 # For dir_colors

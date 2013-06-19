@@ -25,6 +25,7 @@ Bundle 'mileszs/ack.vim'
 Bundle 'msanders/cocoa.vim'
 Bundle 'sukima/xmledit'
 Bundle 'Townk/vim-autoclose'
+Bundle 'sukima/xmledit'
 
 filetype plugin indent on
 
