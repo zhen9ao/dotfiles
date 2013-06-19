@@ -1,9 +1,7 @@
 " initial settings
 set nocompatible
 filetype off
-" call pathogen#runtime_append_all_bundles()
-" call pathogen#helptags()
-" call pathogen#infect()
+
 " Vundle
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -26,6 +24,7 @@ Bundle 'myusuf3/numbers.vim'
 Bundle 'mileszs/ack.vim'
 Bundle 'msanders/cocoa.vim'
 Bundle 'sukima/xmledit'
+Bundle 'Townk/vim-autoclose'
 
 filetype plugin indent on
 
