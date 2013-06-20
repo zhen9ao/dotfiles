@@ -265,3 +265,12 @@ let Tlist_File_Fold_Auto_Close = 1
 let g:Powerline_symbols = 'fancy'
 
 silent! call repeat#set("\<Plug>MyWonderfulMap", v:count)
+
+
+" CtrlP
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_working_path_mode = 'ra'
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+let g:ctrlp_user_command = 'find %s -type f'
