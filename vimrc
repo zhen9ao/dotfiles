@@ -80,7 +80,7 @@ set nrformats=
 " Set spelllang=en_gb
 " Put swap files in /tmp file
 if has("autocmd")
-  autocmd FileType html,css,scss,ruby,pml,yaml,coffee,vim setlocal ts=2 sts=2 sw=2 expandtab
+  autocmd FileType html,css,scss,ruby,pml,yaml,coffee,vim,eruby setlocal ts=2 sts=2 sw=2 expandtab
   autocmd FileType javascript setlocal ts=4 sts=4 sw=4 noexpandtab
   autocmd FileType python setlocal ts=4 sts=4 sw=4 expandtab smarttab
   autocmd BufNewFile,BufRead ~/projects/sencha/**/*.js setlocal ts=4 sts=4 sw=4 et
