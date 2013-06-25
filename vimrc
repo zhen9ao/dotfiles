@@ -2,6 +2,7 @@
 set nocompatible
 filetype off
 
+" Plugins " {{{
 " Vundle
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -13,10 +14,12 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-git'
 Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-cucumber'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-dispatch'
-Bundle 'hallison/vim-markdown'
+Bundle 'tpope/vim-markdown'
+Bundle 'tpope/vim-ragtag'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'kien/ctrlp.vim'
@@ -26,8 +29,13 @@ Bundle 'msanders/cocoa.vim'
 Bundle 'sukima/xmledit'
 Bundle 'Townk/vim-autoclose'
 Bundle 'sukima/xmledit'
+Bundle 'majutsushi/tagbar'
 
 filetype plugin indent on
+"}}}
+
+" keyboard mapping for tagbar 
+nmap <F8> :TagbarToggle<CR>
 
 syntax on
 set modelines=0
