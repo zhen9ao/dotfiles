@@ -15,11 +15,12 @@
 
 * Install `oh-my-zsh`: `curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh`
 
-* `cp .dotfiles/oh-my-zsh/powerline.zsh-theme ~/.oh-my-zsh/themes/`
+* `~/.dotfiles/oh-my-zsh-powerline-theme/install_in_omz.sh`
 
 * Remove file `.zshrc`, re-create file alias `.zshrc`
 
 * Change the default to `zsh` under Ubuntu using: `chsh`, and input `/bin/zsh`
   after prompt
 
-* For GUI users, download a font file for the powerline icons: https://github.com/Lokaltog/vim-powerline/wiki/Patched-fonts. And change the font size to `14` in `iTerm`
+* Select one powerline-font in `https://github.com/Lokaltog/powerline-fonts`.
+  I prefer `Menlo` font.
