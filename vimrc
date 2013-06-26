@@ -38,13 +38,6 @@ nmap <F8> :TagbarToggle<CR>
 syntax on
 set modelines=0
 
-" Mappings for a recovering TextMate user {{{1
-" Indentation {{{2
-nmap <D-[> <<
-nmap <D-]> >>
-vmap <D-[> <gv
-vmap <D-]> >gv
-
 " Few options make thins better
 set encoding=utf-8
 " Preferences {{{1
@@ -126,14 +119,6 @@ set list
 set listchars=tab:▸\ ,eol:¬
 
 " Map keys, disable the arrow keys
-" nnoremap <up> <nop>
-" nnoremap <down> <nop>
-" nnoremap <left> <nop>
-" nnoremap <right> <nop>
-" inoremap <up> <nop>
-" inoremap <down> <nop>
-" inoremap <left> <nop>
-" inoremap <right> <nop>
 nnoremap j gj
 nnoremap k gk
 
