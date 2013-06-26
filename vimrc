@@ -10,7 +10,6 @@ call vundle#rc()
 " Vundle bundles
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
-" Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-git'
 Bundle 'tpope/vim-rails'
@@ -21,7 +20,6 @@ Bundle 'tpope/vim-dispatch'
 Bundle 'tpope/vim-markdown'
 Bundle 'tpope/vim-ragtag'
 Bundle 'vim-ruby/vim-ruby'
-Bundle 'Lokaltog/vim-powerline'
 Bundle 'kien/ctrlp.vim'
 Bundle 'myusuf3/numbers.vim'
 Bundle 'mileszs/ack.vim'
@@ -282,3 +280,17 @@ let g:ctrlp_working_path_mode = 'ra'
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 let g:ctrlp_user_command = 'find %s -type f'
+
+set rtp+=/usr/local/lib/python2.7/site-packages/powerline/bindings/vim
+
+" Fix terminal timeout when pressing escape
+if ! has('gui_running')
+  set ttimeoutlen=10
+  augroup FastEscape
+    autocmd!
+    au InsertEnter * set timeoutlen=0
+    au InsertLeave * set timeoutlen=1000
+  augroup END
+endif
+
+set laststatus=2
