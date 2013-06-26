@@ -7,6 +7,10 @@ ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="powerline"
 
+# Powerline theme setup
+POWERLINE_HIDE_HOST_NAME="true"
+POWERLINE_DISABLE_RPROMPT="true"
+
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
