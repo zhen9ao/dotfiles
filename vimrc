@@ -279,8 +279,8 @@ let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
-let g:ctrlp_user_command = 'find %s -type f'
 
+" powerline
 set rtp+=/usr/local/lib/python2.7/site-packages/powerline/bindings/vim
 
 " Fix terminal timeout when pressing escape
