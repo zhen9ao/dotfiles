@@ -23,4 +23,5 @@
   after prompt
 
 * Select one powerline-font in `https://github.com/Lokaltog/powerline-fonts`.
-  I prefer `Menlo` font.
+  I prefer `Menlo` font for Regular font and `DroidSansMono` for None-ASIIC
+  font.
