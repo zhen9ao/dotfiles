@@ -28,6 +28,7 @@ Bundle 'sukima/xmledit'
 Bundle 'Townk/vim-autoclose'
 Bundle 'sukima/xmledit'
 Bundle 'majutsushi/tagbar'
+Bundle 'nathanaelkane/vim-indent-guides'
 
 filetype plugin indent on
 "}}}
