@@ -87,7 +87,7 @@ if has("autocmd")
   autocmd BufNewFile,BufRead *.rss setfiletype xml
   autocmd BufNewFile,BufRead Rakefile,Capfile,Gemfile,Termfile,Vagrantfile,config.ru setfiletype ruby
   " autocmd FileType ruby :Abolish -buffer initialise initialize
-  autocmd FileType vo_base :colorscheme solarized
+  autocmd FileType vo_base :colorscheme vividchalk
   autocmd BufNewFile,BufRead ~/dotfiles/vim/macros/*,~/.vim/macros/* setfiletype viminfo
   autocmd BufNewFile,BufRead Podfile,*.podspec setfiletype ruby
 endif
@@ -225,7 +225,7 @@ map <D-/> \\\
 
 set t_Co=256
 set background=dark
-colorscheme solarized
+colorscheme vividchalk
 if has("gui_running")
     set guioptions=egmrt
     set guioptions-=T
