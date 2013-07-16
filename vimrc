@@ -67,6 +67,7 @@ set spell
 set t_Co=256
 set background=dark
 colorscheme vividchalk
+set nospell
 
 " Tab settings
 set visualbell t_vb=
