@@ -146,8 +146,8 @@ set list
 set listchars=tab:▸\ ,eol:¬
 
 " Map keys, disable the arrow keys
-nnoremap j gj
-nnoremap k gk
+" nnoremap j gj
+" nnoremap k gk
 
 " Ack key mapping
 nnoremap <leader>a :Ack 
