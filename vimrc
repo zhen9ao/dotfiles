@@ -66,7 +66,8 @@ set spell
 
 set t_Co=256
 set background=dark
-colorscheme vividchalk
+"colorscheme vividchalk
+colorscheme Monokai
 set nospell
 
 " Tab settings
