@@ -30,6 +30,7 @@ Bundle 'sukima/xmledit'
 Bundle 'majutsushi/tagbar'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'msanders/snipmate.vim'
+Bundle 'slim-template/vim-slim'
 
 filetype plugin indent on
 "}}}
