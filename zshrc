@@ -122,3 +122,5 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export TERM="xterm-256color"
 # . /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
+
+source ~/.dotfiles/rake_completion.zsh

@@ -21,7 +21,7 @@ Bundle 'tpope/vim-markdown'
 Bundle 'tpope/vim-ragtag'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'kien/ctrlp.vim'
-Bundle 'myusuf3/numbers.vim'
+"Bundle 'myusuf3/numbers.vim'
 Bundle 'mileszs/ack.vim'
 Bundle 'msanders/cocoa.vim'
 Bundle 'sukima/xmledit'
@@ -64,11 +64,13 @@ set backupdir=~/.tmp
 set directory=~/.tmp
 set ffs=unix,mac,dos
 set spell
+set number
 
 set t_Co=256
 set background=dark
 "colorscheme vividchalk
 colorscheme Monokai
+"colorscheme solarized
 set nospell
 
 " Tab settings
@@ -196,7 +198,7 @@ if has("gui_running")
     set guioptions=egmrt
     set guioptions-=T
     set showtabline=2
-    set guifont=Menlo\ for\ Powerline:h16
+    set guifont=Menlo\ for\ Powerline:h18
 endif
 
 " Ctag
