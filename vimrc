@@ -21,7 +21,7 @@ Bundle 'tpope/vim-markdown'
 Bundle 'tpope/vim-ragtag'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'kien/ctrlp.vim'
-"Bundle 'myusuf3/numbers.vim'
+Bundle 'myusuf3/numbers.vim'
 Bundle 'mileszs/ack.vim'
 Bundle 'msanders/cocoa.vim'
 Bundle 'sukima/xmledit'
@@ -198,7 +198,7 @@ if has("gui_running")
     set guioptions=egmrt
     set guioptions-=T
     set showtabline=2
-    set guifont=Menlo\ for\ Powerline:h18
+    set guifont=Menlo\ for\ Powerline:h16
 endif
 
 " Ctag
