@@ -21,7 +21,7 @@ Bundle 'tpope/vim-markdown'
 Bundle 'tpope/vim-ragtag'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'kien/ctrlp.vim'
-Bundle 'myusuf3/numbers.vim'
+" Bundle 'myusuf3/numbers.vim'
 Bundle 'mileszs/ack.vim'
 Bundle 'msanders/cocoa.vim'
 Bundle 'sukima/xmledit'
@@ -122,6 +122,10 @@ if has("autocmd")
     \ endif
 
   augroup END
+
+  " For paste
+  autocmd InsertEnter * setlocal paste
+  autocmd InsertLeave * setlocal nopaste
 endif
 
 " Change the leader key
