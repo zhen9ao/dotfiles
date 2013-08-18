@@ -31,6 +31,8 @@ Bundle 'majutsushi/tagbar'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'msanders/snipmate.vim'
 Bundle 'slim-template/vim-slim'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'bling/vim-airline'
 
 filetype plugin indent on
 "}}}
@@ -67,10 +69,8 @@ set spell
 set number
 
 set t_Co=256
-set background=dark
-"colorscheme vividchalk
-colorscheme Monokai
-"colorscheme solarized
+"set background=dark
+colorscheme Tomorrow-Night
 set nospell
 
 " Tab settings
@@ -90,6 +90,7 @@ set nrformats=
 if has("autocmd")
   autocmd FileType html,css,scss,ruby,pml,yaml,coffee,vim,eruby setlocal ts=2 sts=2 sw=2 expandtab
   autocmd BufNewFile,BufRead *.html.erb set filetype=eruby.html
+  autocmd BufNewFile,BufRead *.html.slim set filetype=slim.html
   autocmd BufNewFile,BufRead *.js.coffee set filetype=coffee
   autocmd BufNewFile,BufRead Rakefile,Capfile,Gemfile,Termfile,Vagrantfile,config.ru,Podfile,*.podspec setfiletype ruby
 
@@ -238,7 +239,7 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 
 " powerline
-set rtp+=/usr/local/lib/python2.7/site-packages/powerline/bindings/vim
+" set rtp+=/usr/local/lib/python2.7/site-packages/powerline/bindings/vim
 
 " Fix terminal timeout when pressing escape
 if ! has('gui_running')
@@ -251,3 +252,6 @@ if ! has('gui_running')
 endif
 
 set laststatus=2
+
+" For airline
+let g:airline_powerline_fonts = 1
