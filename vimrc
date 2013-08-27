@@ -10,24 +10,14 @@ call vundle#rc()
 " Vundle bundles
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-git'
 Bundle 'tpope/vim-rails'
-Bundle 'tpope/vim-cucumber'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-dispatch'
 Bundle 'tpope/vim-markdown'
-Bundle 'tpope/vim-ragtag'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'kien/ctrlp.vim'
-" Bundle 'myusuf3/numbers.vim'
 Bundle 'mileszs/ack.vim'
-Bundle 'msanders/cocoa.vim'
-Bundle 'sukima/xmledit'
 Bundle 'Townk/vim-autoclose'
-Bundle 'sukima/xmledit'
-Bundle 'majutsushi/tagbar'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'msanders/snipmate.vim'
 Bundle 'slim-template/vim-slim'
@@ -117,6 +107,7 @@ if has("autocmd")
   " (happens when dropping a file on gvim).
   " Also don't do it when the mark is in the first line, that is the default
   " position when opening a file.
+  "
   autocmd BufReadPost *
     \ if line("'\"") > 1 && line("'\"") <= line("$") |
     \   exe "normal! g`\"" |
@@ -125,8 +116,8 @@ if has("autocmd")
   augroup END
 
   " For paste
-  autocmd InsertEnter * setlocal paste
-  autocmd InsertLeave * setlocal nopaste
+  "autocmd InsertEnter * setlocal paste
+  "autocmd InsertLeave * setlocal nopaste
 endif
 
 " Change the leader key
@@ -179,19 +170,6 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
-" Speed up tab switching
-map <D-S-]> gt
-map <D-S-[> gT
-map <D-1> 1gt
-map <D-2> 2gt
-map <D-3> 3gt
-map <D-4> 4gt
-map <D-5> 5gt
-map <D-6> 6gt
-map <D-7> 7gt
-map <D-8> 8gt
-map <D-9> 9gt
-map <D-0> :tablast<CR>
 
 " Commenting {{{2
 " requires NERDCommenter plugin
