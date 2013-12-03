@@ -59,7 +59,7 @@ GO=/usr/local/go/bin
 NDK=/Users/Jack/Documents/Android/android-ndk-r8
 NPM=/usr/local/share/npm/bin
 
-PATH=/usr/local/sbin:/usr/local/bin:/usr/local/Cellar/gettext/0.17/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/usr/X11/bin:$GAE/bin:$GWT:~/bin:$M2_HOME:$M2:$GO:$NDK:$NPM
+PATH=/usr/local/sbin:/usr/local/bin:/usr/local/Cellar/gettext/0.17/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/usr/X11/bin:$GAE/bin:$GWT:~/bin:$M2_HOME:$M2:$GO:$NDK:$NPM:$PATH
 
 # For Postgress.app
 PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
