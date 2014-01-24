@@ -12,3 +12,5 @@
 	trustExitCode = true
 [push]
 	default = upstream
+[mergetool]
+	keepBackup = true
