@@ -23,6 +23,7 @@ Bundle 'msanders/snipmate.vim'
 Bundle 'slim-template/vim-slim'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'bling/vim-airline'
+Bundle 'mattn/emmet-vim'
 
 filetype plugin indent on
 "}}}

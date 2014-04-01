@@ -85,11 +85,11 @@ alias gd='git diff'
 alias gm='git commit -m'
 alias gma='git commit -am'
 alias gb='git branch'
-alias gc='git checkout'
+alias gch='git checkout'
 alias gra='git remote add'
 alias grr='git remote rm'
-alias gpu='git pull'
-alias gcl='git clone'
+alias gpl='git pull'
+alias gc='git clone'
 
 alias lh='ll -h'
 alias la='ls -la'
@@ -111,6 +111,9 @@ function wopen {
     open ${PWD##*/}.xcworkspace
 } # open Xcode workspace
 
+# Prevent the warnings of CocoaPods.
+export LC_ALL="en_US.UTF-8"
+
 # For ruby
 if [ -d ~/.rvm ]; then
     [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
@@ -122,3 +125,7 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export TERM="xterm-256color"
 # . /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
+
+# For jenv
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
