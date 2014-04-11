@@ -114,13 +114,6 @@ function wopen {
 # Prevent the warnings of CocoaPods.
 export LC_ALL="en_US.UTF-8"
 
-# For ruby
-if [ -d ~/.rvm ]; then
-    [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
-fi
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
 # For Homebrew-cask
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export TERM="xterm-256color"
@@ -129,3 +122,10 @@ export TERM="xterm-256color"
 # For jenv
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
+
+# For ruby
+if [ -d ~/.rvm ]; then
+    [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+fi
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
