@@ -19,11 +19,16 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'mileszs/ack.vim'
 Bundle 'Townk/vim-autoclose'
 Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'msanders/snipmate.vim'
 Bundle 'slim-template/vim-slim'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'bling/vim-airline'
 Bundle 'mattn/emmet-vim'
+
+" For Snippets
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+Bundle "garbas/vim-snipmate"
+Bundle "honza/vim-snippets"
 
 filetype plugin indent on
 "}}}
