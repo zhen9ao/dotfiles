@@ -18,4 +18,4 @@ if [ "$program" = "java" ]; then
 fi
 
 export JENV_ROOT="/Users/Jack/.jenv"
-exec "/usr/local/Cellar/jenv/20140322/libexec/libexec/jenv" exec "$program" "$@"
+exec "/usr/local/Cellar/jenv/201404260/libexec/libexec/jenv" exec "$program" "$@"
