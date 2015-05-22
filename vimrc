@@ -187,7 +187,7 @@ if has("gui_running")
     set guioptions=egmrt
     set guioptions-=T
     set showtabline=2
-    set guifont=Menlo\ for\ Powerline:h16
+    set guifont=Droid\ Sans\ Mono\ for\ Powerline:h14
 endif
 
 " Ctag
