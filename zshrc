@@ -117,6 +117,7 @@ export TERM="xterm-256color"
 # For jenv
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
+export JAVA_HOME="$HOME/.jenv/versions/`jenv version-name`"
 
 # For ruby
 if [ -d ~/.rvm ]; then
