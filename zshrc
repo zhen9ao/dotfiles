@@ -43,7 +43,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
-MAVEN=/usr/local/Cellar/maven/3.0.4/libexec
+MAVEN=/usr/local/Cellar/maven/3.3.3/libexec
 export M2_HOME=$MAVEN
 export M2=$M2_HOME/bin
 export ANDROID_HOME=/Volumes/MacExt/Android/android-sdk-mac_x86
