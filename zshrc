@@ -43,10 +43,13 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
-MAVEN=/usr/local/Cellar/maven/3.3.3/libexec
+MAVEN=/usr/local/Cellar/maven/3.3.9/libexec
 export M2_HOME=$MAVEN
 export M2=$M2_HOME/bin
 export ANDROID_HOME=/Volumes/MacExt/Android/android-sdk-mac_x86
+
+GRADLE=/usr/local/Cellar/gradle/2.9/libexec
+export GRADLE_HOME=$GRADLE
 
 GAE=/Users/Jack/Documents/Google/appengine-java-sdk-1.5.0
 GWT=/Users/Jack/Documents/gwt-2.1.1

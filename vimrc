@@ -74,7 +74,7 @@ set nospell
 
 " Tab settings
 set visualbell t_vb=
-set tabstop=4
+set tabstop=2
 set softtabstop=4
 set shiftwidth=4
 set expandtab
