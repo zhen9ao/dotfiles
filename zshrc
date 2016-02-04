@@ -37,7 +37,7 @@ DISABLE_UPDATE_PROMPT=true
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git ruby osx brew bundler)
+plugins=(git ruby osx brew bundler git-flow-completion)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -78,8 +78,8 @@ alias ga='git add'
 alias gp='git push'
 alias gf='git fetch'
 alias gl='git log'
-alias gs='git status'
-alias gd='git diff'
+alias gs='git status -sb'
+alias gd='git diff --word-diff'
 alias gm='git commit -m'
 alias gma='git commit -am'
 alias gb='git branch'
@@ -124,10 +124,9 @@ export JAVA_HOME="$HOME/.jenv/versions/`jenv version-name`"
 
 # For ruby
 if [ -d ~/.rvm ]; then
-    [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 fi
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # For TheFuck
 alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
