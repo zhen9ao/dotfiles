@@ -1,0 +1,2 @@
+Host *
+ProxyCommand /usr/local/bin/corkscrew 127.0.0.1 56789 %h %p
