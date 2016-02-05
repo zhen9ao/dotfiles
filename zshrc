@@ -130,4 +130,7 @@ fi
 # For TheFuck
 alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
 
+# For Docker-Machine
+eval $(docker-machine env default)
+
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
