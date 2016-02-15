@@ -22,6 +22,7 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'slim-template/vim-slim'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'mattn/emmet-vim'
 
 " For Snippets
