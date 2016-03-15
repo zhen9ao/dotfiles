@@ -69,6 +69,7 @@ set ffs=unix,mac,dos
 set spell
 set number
 
+set t_ut=
 set t_Co=256
 "set background=dark
 colorscheme Tomorrow-Night
