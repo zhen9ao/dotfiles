@@ -25,6 +25,7 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'bling/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'mattn/emmet-vim'
+"Plugin 'artur-shaik/vim-javacomplete2'
 
 " For Snippets
 Plugin 'MarcWeber/vim-addon-mw-utils'
@@ -90,6 +91,7 @@ set nrformats=
 " Set spelllang=en_gb
 " Put swap files in /tmp file
 if has("autocmd")
+  "  autocmd FileType java setlocal omnifunc=javacomplete#Complete
   autocmd FileType html,css,scss,ruby,pml,yaml,coffee,vim,eruby setlocal ts=2 sts=2 sw=2 expandtab
   autocmd BufNewFile,BufRead *.html.erb set filetype=eruby.html
   autocmd BufNewFile,BufRead *.html.slim set filetype=slim
