@@ -118,9 +118,11 @@ export TERM="xterm-256color"
 # . /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 
 # For jenv
-export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
-export JAVA_HOME="$HOME/.jenv/versions/`jenv version-name`"
+if [[ "$(uname -s)" == 'Darwin' ]]; then
+    export PATH="$HOME/.jenv/bin:$PATH"
+    eval "$(jenv init -)"
+    export JAVA_HOME="$HOME/.jenv/versions/`jenv version-name`"
+fi
 
 # For ruby
 if [ -d ~/.rvm ]; then
@@ -130,6 +132,8 @@ fi
 alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
 
 # For Docker-Machine
-eval $(docker-machine env default)
+if [ "$(uname -s)" != "Linux" ]; then
+    eval $(docker-machine env default)
+fi
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
