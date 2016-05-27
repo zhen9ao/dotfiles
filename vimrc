@@ -179,11 +179,15 @@ au Focuslost * :wa
 "map jj  to <ESC>
 inoremap jj <ESC>
 
-" Speed up buffer switching
+" Speed up window switching
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+
+" buffer switching
+nnoremap gn :bn<CR>
+nnoremap gp :bp<CR>
 
 " Commenting {{{2
 " requires NERDCommenter plugin
@@ -230,9 +234,6 @@ let g:ctrlp_working_path_mode = 'ra'
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 
-" powerline
-" set rtp+=/usr/local/lib/python2.7/site-packages/powerline/bindings/vim
-
 " Fix terminal timeout when pressing escape
 if ! has('gui_running')
   set ttimeoutlen=10
@@ -247,3 +248,4 @@ set laststatus=2
 
 " For airline
 let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
