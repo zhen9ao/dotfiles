@@ -114,7 +114,8 @@ export LC_ALL="en_US.UTF-8"
 
 # For Homebrew-cask
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
-export TERM="xterm-256color"
+#export TERM="xterm-256color"
+export HOMEBREW_GITHUB_API_TOKEN=cd5f5f54487af5f882c669ab01eb2bc86a052907
 # . /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 
 # For jenv
