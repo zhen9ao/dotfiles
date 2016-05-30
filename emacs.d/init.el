@@ -10,5 +10,5 @@
 (setq url-gateway-method 'socks)
 (setq socks-server '("Default server" "127.0.0.1" 6153 5))
 
-(require 'evil)
-(evil-mode 1)
+
+
