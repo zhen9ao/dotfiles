@@ -9,7 +9,8 @@
 
 ;; Proxy settings
 (setq url-gateway-method 'socks)
-(setq socks-server '("Default server" "127.0.0.1" 6153 5))
+;;(setq socks-server '("Default server" "127.0.0.1" 6153 5))
+(setq socks-server '("Default server" "10.159.32.155" 1081 5))
 
 ;; Color theme config
 (require 'color-theme-sanityinc-tomorrow)
