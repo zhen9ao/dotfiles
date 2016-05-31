@@ -1,18 +1,30 @@
-(require 'package)
+;;; init.el --- Spacemacs Initialization File
+;;
+;; Copyright (c) 2012-2016 Sylvain Benner & Contributors
+;;
+;; Author: Sylvain Benner <sylvain.benner@gmail.com>
+;; URL: https://github.com/syl20bnr/spacemacs
+;;
+;; This file is not part of GNU Emacs.
+;;
+;;; License: GPLv3
 
-(add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/"))
-(add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
-(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
+;; Without this comment emacs25 adds (package-initialize) here
+;; (package-initialize)
 
-;;; Fire up package.el
-(setq package-enable-at-startup nil)
-(package-initialize)
+(setq gc-cons-threshold 100000000)
+(defconst spacemacs-version         "0.105.20" "Spacemacs version.")
+(defconst spacemacs-emacs-min-version   "24.3" "Minimal version of Emacs.")
 
-;; Proxy settings
-(setq url-gateway-method 'socks)
-(setq socks-server '("Default server" "127.0.0.1" 6153 5))
-;;(setq socks-server '("Default server" "10.159.32.155" 1081 5))
-
-;; Color theme config
-(require 'color-theme-sanityinc-tomorrow)
-
+(if (not (version<= spacemacs-emacs-min-version emacs-version))
+    (message (concat "Your version of Emacs (%s) is too old. "
+                     "Spacemacs requires Emacs version %d or above.")
+             emacs-version spacemacs-emacs-min-version)
+  (load-file (concat user-emacs-directory "core/core-load-paths.el"))
+  (require 'core-spacemacs)
+  (spacemacs/init)
+  (spacemacs/maybe-install-dotfile)
+  (configuration-layer/sync)
+  (spacemacs/setup-startup-hook)
+  (require 'server)
+  (unless (server-running-p) (server-start)))
