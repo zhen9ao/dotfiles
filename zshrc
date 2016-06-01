@@ -90,7 +90,7 @@ alias gpl='git pull'
 alias gc='git clone'
 
 alias lh='ll -h'
-alias la='ls -la'
+alias ll='ls -la'
 
 # Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
