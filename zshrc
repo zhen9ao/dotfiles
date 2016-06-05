@@ -124,9 +124,9 @@ if [[ "$(uname -s)" == 'Darwin' ]]; then
     export JAVA_HOME="$HOME/.jenv/versions/`jenv version-name`"
 fi
 
-# For ruby
-if [ -d ~/.rvm ]; then
-fi
+# For rvm
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 # For TheFuck
 alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
