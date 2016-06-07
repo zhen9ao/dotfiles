@@ -37,7 +37,7 @@ DISABLE_AUTO_UPDATE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git ruby osx brew bundler rvm git-flow-completion docker)
+plugins=(git ruby osx brew bundler rvm rails git-flow-completion docker)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -135,5 +135,3 @@ alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
 if [ "$(uname -s)" != "Linux" ]; then
     eval $(docker-machine env default)
 fi
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
