@@ -34,6 +34,7 @@ values."
      markdown
      ;; org
      (shell :variables
+            shell-default-shell 'ansi-term
             shell-default-height 50
             shell-default-position 'bottom
             shell-default-term-shell "/bin/zsh")
