@@ -26,7 +26,7 @@ values."
      (ruby :variables
            ruby-enable-enh-ruby-mode t
            ruby-version-manager 'rvm)
-    ruby-on-rails
+     ruby-on-rails
      auto-completion
      ;; better-defaults
      emacs-lisp
