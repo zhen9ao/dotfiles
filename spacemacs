@@ -40,7 +40,7 @@ values."
             shell-default-term-shell "/bin/zsh")
      spell-checking
      ;; syntax-checking
-     ;; version-control
+     version-control
      themes-megapack
      )
    ;; List of additional packages that will be installed without being
@@ -249,6 +249,11 @@ executes.
 before packages are loaded. If you are unsure, you should try in setting them in
 `dotspacemacs/user-config' first."
   (setq-default git-enable-magit-svn-plugin t)
+
+  ;; (setq url-proxy-services
+  ;;       '(("http" . "10.144.1.10:8080")
+  ;;         ("https" . "10.144.1.10:8080"))
+  ;; )
   )
 
 (defun dotspacemacs/user-config ()
