@@ -25,3 +25,5 @@
 * Select one powerline-font in `https://github.com/Lokaltog/powerline-fonts`.
   I prefer `Menlo` font for Regular font and `DroidSansMono` for None-ASIIC
   font.
+
+* Install sdkman: `curl -s "https://get.sdkman.io" | bash`
