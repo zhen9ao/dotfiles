@@ -37,7 +37,7 @@ DISABLE_AUTO_UPDATE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git ruby osx brew bundler rvm rails git-flow-completion docker)
+plugins=(mvn git ruby osx brew bundler rvm rails git-flow-completion docker)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -91,6 +91,7 @@ alias gc='git clone'
 
 alias lh='ll -h'
 alias ll='ls -la'
+alias emacs='emacs -nw'
 
 # Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
@@ -135,3 +136,6 @@ alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
 if [ "$(uname -s)" != "Linux" ]; then
     eval $(docker-machine env default)
 fi
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/jack/.sdkman"
+[[ -s "/Users/jack/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/jack/.sdkman/bin/sdkman-init.sh"
