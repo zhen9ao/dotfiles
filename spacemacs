@@ -32,7 +32,8 @@ values."
      emacs-lisp
      git
      markdown
-     ;; org
+     ;; pandoc
+     org
      (shell :variables
             shell-default-shell 'ansi-term
             shell-default-height 50
@@ -42,6 +43,7 @@ values."
      ;; syntax-checking
      version-control
      themes-megapack
+     colors
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
@@ -254,6 +256,7 @@ before packages are loaded. If you are unsure, you should try in setting them in
   ;;       '(("http" . "10.144.1.10:8080")
   ;;         ("https" . "10.144.1.10:8080"))
   ;; )
+  (global-linum-mode)
   )
 
 (defun dotspacemacs/user-config ()
