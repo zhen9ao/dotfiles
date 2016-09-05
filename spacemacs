@@ -33,7 +33,8 @@ values."
      git
      markdown
      ;; pandoc
-     org
+     (org :variables
+          org-enable-github-support t)
      (shell :variables
             shell-default-shell 'ansi-term
             shell-default-height 50
@@ -72,7 +73,7 @@ values."
    ;; This variable has no effect if Emacs is launched with the parameter
    ;; `--insecure' which forces the value of this variable to nil.
    ;; (default t)
-   dotspacemacs-elpa-https nil
+   dotspacemacs-elpa-https t
    ;; Maximum allowed time in seconds to contact an ELPA repository.
    dotspacemacs-elpa-timeout 5
    ;; If non nil then spacemacs will check for updates at startup
@@ -251,11 +252,7 @@ executes.
 before packages are loaded. If you are unsure, you should try in setting them in
 `dotspacemacs/user-config' first."
   (setq-default git-enable-magit-svn-plugin t)
-
-  ;; (setq url-proxy-services
-  ;;       '(("http" . "10.144.1.10:8080")
-  ;;         ("https" . "10.144.1.10:8080"))
-  ;; )
+  (setq ns-pop-up-frames nil)
   (global-linum-mode)
   )
 

@@ -37,11 +37,15 @@ DISABLE_AUTO_UPDATE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(mvn git ruby osx brew bundler rvm rails git-flow-completion docker)
+plugins=(mvn git ruby osx brew gem bundler rvm rails git-flow-completion docker)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+export https_proxy=https://127.0.0.1:6152
+export http_proxy=http://127.0.0.1:6152
+#export http_proxy=http://10.144.1.10:8080
+#export https_proxy=https://10.144.1.10:8080
 
 MAVEN=/usr/local/Cellar/maven/3.3.9/libexec
 export M2_HOME=$MAVEN
@@ -62,11 +66,11 @@ PATH=/usr/local/sbin:/usr/local/bin:/usr/local/Cellar/gettext/0.17/bin:/usr/bin:
 # For Postgress.app
 PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
 
-if [ -f /bin/launchctl ]; then
-    launchctl setenv PATH $PATH
-    launchctl setenv ANDROID_HOME $ANDROID_HOME
-    launchctl setenv M2_HOME $M2_HOME
-fi
+#if [ -f /bin/launchctl ]; then
+#    launchctl setenv PATH $PATH
+#    launchctl setenv ANDROID_HOME $ANDROID_HOME
+#    launchctl setenv M2_HOME $M2_HOME
+#fi
 
 # mount the android file image
 # function mountAndroid { hdiutil attach /Volumes/Data/android.dmg.sparseimage -mountpoint /Volumes/android; }
@@ -125,10 +129,6 @@ if [[ "$(uname -s)" == 'Darwin' ]]; then
     export JAVA_HOME="$HOME/.jenv/versions/`jenv version-name`"
 fi
 
-# For rvm
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
 # For TheFuck
 alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
 
@@ -136,6 +136,11 @@ alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
 if [ "$(uname -s)" != "Linux" ]; then
     eval $(docker-machine env default)
 fi
+
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/jack/.sdkman"
 [[ -s "/Users/jack/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/jack/.sdkman/bin/sdkman-init.sh"
+
+export LIQUIBASE_HOME=/usr/local/Cellar/liquibase/3.5.1/libexec
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
