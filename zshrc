@@ -96,6 +96,7 @@ alias gc='git clone'
 alias lh='ll -h'
 alias ll='ls -la'
 alias e='emacs -nw'
+alias vim='nvim'
 
 # Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
