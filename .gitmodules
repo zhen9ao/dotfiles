@@ -7,6 +7,3 @@
 [submodule "oh-my-zsh-powerline-theme"]
 	path = oh-my-zsh-powerline-theme
 	url = https://github.com/jeremyFreeAgent/oh-my-zsh-powerline-theme.git
-[submodule "emacs.d"]
-	path = emacs.d
-	url = https://github.com/syl20bnr/spacemacs
