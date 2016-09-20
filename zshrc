@@ -60,8 +60,9 @@ GWT=/Users/Jack/Documents/gwt-2.1.1
 GO=/usr/local/go/bin
 NDK=/Users/Jack/Documents/Android/android-ndk-r8
 NPM=/usr/local/share/npm/bin
+ECLIPSE_HOME=/Applications/Eclipse.app/Contents/Eclipse
 
-PATH=/usr/local/sbin:/usr/local/bin:/usr/local/Cellar/gettext/0.17/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/usr/X11/bin:$GAE/bin:$GWT:~/bin:$M2_HOME:$M2:$GO:$NDK:$NPM:$PATH
+PATH=/usr/local/sbin:/usr/local/bin:/usr/local/Cellar/gettext/0.17/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/usr/X11/bin:$GAE/bin:$GWT:~/bin:$M2_HOME:$M2:$GO:$NDK:$NPM:$ECLIPSE_HOME:$PATH
 
 # For Postgress.app
 PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
@@ -97,6 +98,7 @@ alias lh='ll -h'
 alias ll='ls -la'
 alias e='emacs -nw'
 alias vim='nvim'
+alias oe='open -a emacs'
 
 # Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"

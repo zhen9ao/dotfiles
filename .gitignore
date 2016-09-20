@@ -42,3 +42,6 @@ flycheck_*.el
 
 # projectiles files
 .projectile
+
+nvim/undodir
+nvim/plugins
