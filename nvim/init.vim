@@ -118,7 +118,7 @@ set listchars+=tab:\|\
 
 " Set my leader to the comma key.
 noremap <Space> <Nop>
-let g:mapleader='\<SPACE>'
+let g:mapleader='\<S>'
 
 " One less hit to get to the command-line.
 nnoremap ; :
@@ -154,4 +154,4 @@ call plug#end()
 filetype plugin indent on
 syntax enable
 
-colorscheme distinguished
+colorscheme Tomorrow-Night-Eighties
