@@ -1,0 +1,10 @@
+strict-ssl = false
+#https_proxy = https://10.144.1.10:8080
+#http_proxy = http://10.144.1.110:8080
+
+#https_proxy = socks5://10.159.32.155:1081
+#http_proxy = socks5://10.159.32.155:1081
+
+https-proxy=http://127.0.0.1:6152
+http-proxy=http://127.0.0.1:6152
+proxy=http://127.0.0.1:6152
