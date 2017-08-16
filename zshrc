@@ -37,17 +37,17 @@ DISABLE_AUTO_UPDATE=false
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(mvn git ruby osx brew gem bundler rvm rails git-flow-completion docker)
+plugins=(mvn git ruby osx brew gem bundler rvm rails git-flow-completion docker heroku)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export https_proxy=https://127.0.0.1:6152
+export https_proxy=http://127.0.0.1:6152
 export http_proxy=http://127.0.0.1:6152
 #export http_proxy=http://10.144.1.10:8080
 #export https_proxy=https://10.144.1.10:8080
 
-MAVEN=/usr/local/Cellar/maven/3.3.9/libexec
+MAVEN=/usr/local/Cellar/maven/3.5.0/libexec
 export M2_HOME=$MAVEN
 export M2=$M2_HOME/bin
 export ANDROID_HOME=/Volumes/MacExt/Android/android-sdk-mac_x86
@@ -122,6 +122,7 @@ export LC_ALL="en_US.UTF-8"
 
 # For Homebrew-cask
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+export HOMEBREW_GITHUB_API_TOKEN="ddc4f8ed2c5e335fedc3a4047bd53d66e0c55f9b"
 export TERM="xterm-256color"
 # . /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 
@@ -131,6 +132,9 @@ if [[ "$(uname -s)" == 'Darwin' ]]; then
     eval "$(jenv init -)"
     export JAVA_HOME="$HOME/.jenv/versions/`jenv version-name`"
 fi
+
+# For Pry
+export EDITOR="vim"
 
 # For TheFuck
 alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'

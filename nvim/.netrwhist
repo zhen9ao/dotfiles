@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/Users/jack/Documents/Nokia/Integration_Manager/integration_manager_install/src/main/resources/dca'
+let g:netrw_dirhist_2='/Users/jack/Documents/Nokia/ads/lib'
+let g:netrw_dirhist_3='/Users/jack/Documents/Nokia/ads/lib/ads'
+let g:netrw_dirhist_4='/Users/jack/Documents/GitHub/keystone'
+let g:netrw_dirhist_5='/Users/jack/Documents/GitHub/keystone/keystone'
+let g:netrw_dirhist_6='/Users/jack/Documents/GitHub/keystone/keystone/models'
