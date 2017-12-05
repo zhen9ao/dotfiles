@@ -4,6 +4,8 @@
 [core]
 	excludesfile = /Users/Jack/.gitignore_global
 	editor = /usr/local/bin/vim
+[diff "excel"]
+  command = excel_cmp
 [difftool "sourcetree"]
 	cmd = " "
 	path = 
